@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images\favicon.ico" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<link rel="stylesheet" href="scripts\styles.css">
+		<title>
+			Jays Homepage
+		</title>
+	</head>
+	<body>
+
+	<div id="delete-zone">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+			<path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+		</svg>
+	</div>
+
+	<div id="scroll-animation-container">
+		<img id="jay-img" src="images/jayslim.png">
+		<img id="callum-img" src="images/callumslim.png">
+		<img id="center-img" src="images/Jay and Callum.png">
+	</div>
+
+	<div class="container">
+		<button id="theme-toggle">
+			Toggle Theme
+		</button>
+		<h1 class="glow text-3xl md:text-4xl font-bold uppercase tracking-widest">
+			Dashboard
+		</h1>
+
+<nav class="tabs">
+			<button id="scroll-left-btn" class="tab-scroll-btn hidden">
+				&lt;
+			</button>
+			<div class="tabs-wrapper">
+				<ul>
+					<li>
+						<a data-tab="home" class="tab-link active">
+							Home
+						</a>
+					</li>
+					<li>
+						<a data-tab="google-links" class="tab-link">
+							Google Links
+						</a>
+					</li>
+					<li>
+						<a data-tab="resources" class="tab-link">
+							Resources
+						</a>
+					</li>
+					<li>
+						<a data-tab="DND" class="tab-link">
+							DND
+						</a>
+					</li>
+					<li>
+						<a data-tab="etchpage" class="tab-link">
+							Etch-A-Sketch
+						</a>
+					</li>
+					<li>
+						<a data-tab="snakepage" class="tab-link">
+							Snake
+						</a>
+					</li>
+					<li>
+						<a data-tab="tetrispage" class="tab-link">
+							Tetris
+						</a>
+					</li>
+					<li>
+						<a data-tab="smolgames" class="tab-link">
+							Smol Games
+						</a>
+					</li>
+				</ul>
+			</div>
+			<button id="scroll-right-btn" class="tab-scroll-btn hidden">
+				&gt;
+			</button>
+		</nav>
+
+
+		<div class="tab-content">
+			<div id="home" class="tab-pane active">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Quick Links
+				</h2>
+				<div id="quick-links-grid" class="link-grid">
+				</div>
+				<div class="tab-button-group">
+				<button type="button" class="action-btn add-link-btn" data-grid="quick">
+					Add New Link
+				</button>
+				<button type="button" class="action-btn share-link-btn" data-grid="quick">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
+						<path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z"/>
+					</svg>
+				</button>
+			</div>
+			</div>
+
+
+			<div id="google-links" class="tab-pane">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Google Links
+				</h2>
+				<div id="google-links-grid" class="link-grid">
+				</div>
+				<div class="tab-button-group">
+					<button class="action-btn add-link-btn" data-grid="google">
+						Add New Link
+					</button>
+					<button class="action-btn share-link-btn" data-grid="google">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
+							<path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div id="resources" class="tab-pane">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Resources
+				</h2>
+				<div onclick="copyToClipboard('#61099d')" class="link-card" style="cursor:default; color: white; background-color: var(--callum-purple)";> 
+					Purple #61099d 
+				</div>
+				<div onclick="copyToClipboard('#FF69B4')" class="link-card" style="cursor:default; color: white; background-color: var(--jay-pink)";> 
+					Pink #FF69B4 
+				</div>
+				<div style="cursor:default;" class="link-card" onclick="window.open('https://icons.getbootstrap.com/', '_blank');">
+					SVG Icons
+				</div> <br>
+				<div class="link-grid">
+					<div class="demo-card flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front">
+								<h3>
+									Flip Me!
+								</h3>
+							</div>
+							<div class="flip-card-back">
+								<h3 style="color:white;">
+									Tada! 🎉
+								</h3>
+							</div>
+						</div>
+					</div>
+					<div class="demo-card glass-card">
+						<h3>
+							Glassmorphism
+						</h3>
+					</div>
+					<div class="demo-card animated-gradient-card">
+						<h3>
+							Animated Gradient
+						</h3>
+					</div>
+				</div>
+			
+				<canvas id="particle-canvas">
+				</canvas>
+				
+				
+			</div>		
+			<div id="DND" class="tab-pane">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					DND
+				</h2>
+				<div id="settlementgencontainer">
+					<!-- Header -->
+					<h2>
+						D&D Settlement Generator
+					</h2>
+					<p>
+						Create a unique settlement for your campaign, one piece at a time.
+					</p>
+
+					<!-- Master Controls -->
+					<div>
+						<button id="generate-all">
+							Generate All
+						</button>
+						<button id="reset-all">
+							Reset
+						</button>
+					</div>
+
+					<!-- Modular Generation Grid -->
+					<div>
+						
+						<!-- Module: Name -->
+						<div>
+							<div>
+								<h3>
+									Name
+								</h3>
+								<button id="gen-name">
+									Generate
+								</button>
+							</div>
+							<p id="output-name">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Type & Size -->
+						<div>
+							<div>
+								<h3>
+									Type & Size
+								</h3>
+								<button id="gen-type">
+									Generate
+								</button>
+							</div>
+							<p id="output-type">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Location -->
+						<div>
+							<div>
+								<h3>
+									Location
+								</h3>
+								<button id="gen-location">
+									Generate
+								</button>
+							</div>
+							<p id="output-location">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Population -->
+						<div>
+							<div>
+								<h3>
+									Population
+								</h3>
+								<button id="gen-population">	
+									Generate
+								</button>
+							</div>
+							<p id="output-population">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Government -->
+						<div>
+							<div>
+								<h3>
+									Government
+								</h3>
+								<button id="gen-government">
+									Generate
+								</button>
+							</div>
+							<p id="output-government">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Economy -->
+						<div>
+							<div>
+								<h3>
+									Economy
+								</h3>
+								<button id="gen-economy">
+									Generate
+								</button>
+							</div>
+							<p id="output-economy">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Atmosphere -->
+						<div>
+							<div>
+								<h3>
+									Atmosphere
+								</h3>
+								<button id="gen-vibe">
+									Generate
+								</button>
+							</div>
+							<p id="output-vibe">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Landmark -->
+						<div>
+							<div>
+								<h3>
+									Notable Landmark
+								</h3>
+								<button id="gen-landmark">
+									Generate
+								</button>
+							</div>
+							<p id="output-landmark">
+								Click to generate...
+							</p>
+						</div>
+
+						<!-- Module: Problem -->
+						<div>
+							<div>
+								<h3>
+									Current Problem
+								</h3>
+								<button id="gen-problem">
+									Generate
+								</button>
+							</div>
+							<p id="output-problem">
+								Click to generate...
+							</p>
+						</div>
+					</div>
+
+					<!-- Final Assembled Output -->
+					<div>
+						<h2>Generated Settlement</h2>
+						<div id="final-output">
+							<p>
+								Click 'Generate All' or generate each module above to create your settlement description.
+							</p>
+						</div>
+					</div>
+				</div>
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Dice Roller
+				</h2>
+				<div class="dice-roller-container">
+					<div id="dice-freeform-controls">
+						<input type="text" id="dice-freeform-input" placeholder="e.g., 1d20+2d6+5">
+						<button id="dice-freeform-roll-button">
+							Roll
+						</button>
+					</div>
+					<div id="dice-controls">
+						<div class="dice-control-group">
+							<label for="dice-d4-qty">
+								d4
+							</label>
+							<button class="dice-qty-btn" data-sides="4" data-action="decrement" aria-label="Decrease d4 count">
+								-
+							</button>
+							<input type="number" id="dice-d4-qty" class="dice-qty-input dice-no-spinner" data-sides="4" value="0">
+							<button class="dice-qty-btn" data-sides="4" data-action="increment" aria-label="Increase d4 count">
+								+
+							</button>
+						</div>
+						<div class="dice-control-group">
+							<label for="dice-d6-qty">
+								d6
+							</label>
+							<button class="dice-qty-btn" data-sides="6" data-action="decrement" aria-label="Decrease d6 count">
+								-
+							</button>
+							<input type="number" id="dice-d6-qty" class="dice-qty-input dice-no-spinner" data-sides="6" value="0">
+							<button class="dice-qty-btn" data-sides="6" data-action="increment" aria-label="Increase d6 count">
+								+
+							</button>
+						</div>
+						<div class="dice-control-group">
+							<label for="dice-d8-qty">
+								d8
+							</label>
+							<button class="dice-qty-btn" data-sides="8" data-action="decrement" aria-label="Decrease d8 count">
+								-
+							</button>
+							<input type="number" id="dice-d8-qty" class="dice-qty-input dice-no-spinner" data-sides="8" value="0">
+							<button class="dice-qty-btn" data-sides="8" data-action="increment" aria-label="Increase d8 count">
+								+
+							</button>
+						</div>
+						<div class="dice-control-group">
+							<label for="dice-d10-qty">
+								d10
+							</label>
+							<button class="dice-qty-btn" data-sides="10" data-action="decrement" aria-label="Decrease d10 count">
+								-
+							</button>
+							<input type="number" id="dice-d10-qty" class="dice-qty-input dice-no-spinner" data-sides="10" value="0">
+							<button class="dice-qty-btn" data-sides="10" data-action="increment" aria-label="Increase d10 count">
+								+
+							</button>
+						</div>
+						<div class="dice-control-group">
+							<label for="dice-d12-qty">
+								d12
+							</label>
+							<button class="dice-qty-btn" data-sides="12" data-action="decrement" aria-label="Decrease d12 count">
+								-
+							</button>
+							<input type="number" id="dice-d12-qty" class="dice-qty-input dice-no-spinner" data-sides="12" value="0">
+							<button class="dice-qty-btn" data-sides="12" data-action="increment" aria-label="Increase d12 count">
+								+
+							</button>
+						</div>
+						<div class="dice-control-group">
+							<label for="dice-d20-qty">
+								d20
+							</label>
+							<button class="dice-qty-btn" data-sides="20" data-action="decrement" aria-label="Decrease d20 count">
+								-
+							</button>
+							<input type="number" id="dice-d20-qty" class="dice-qty-input dice-no-spinner" data-sides="20" value="0">
+							<button class="dice-qty-btn" data-sides="20" data-action="increment" aria-label="Increase d20 count">
+								+
+							</button>
+						</div>
+					</div>
+					<button id="dice-roll-button">
+						Roll All Below
+					</button>
+					<div id="dice-results">
+						<h2 class="dice-h2">
+							Total: 
+							<span id="dice-total-result">
+								0
+							</span>
+						</h2>
+						<p id="dice-breakdown">
+						</p>
+					</div>
+				</div>
+
+				<div id="dice-dice-mat">
+				</div>
+				
+			</div>
+			
+			
+			<div id="etchpage" class="tab-pane">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest"> 
+					Etch-A-Sketch
+				</h2>
+				<!-- Etch-A-Sketch HTML Start -->
+				<div class="etch-a-sketch-container">
+					<div class="etch-a-sketch-body">
+						<!-- Canvas for drawing -->
+						<canvas id="etch-canvas">
+						</canvas>
+
+						<div id="etch-coords-display" style="color: white; font-weight: bold; margin-top: 10px;">
+							X: 0, Y: 0
+						</div>
+						
+						<!-- Controls -->
+						<div class="etch-controls">
+							<!-- Left Knob - Directional Controls -->
+							<div class="knob-container">
+								<div class="knob-grid">
+									<div>
+									</div>
+									<button id="btn-up" class="control-knob">
+										▲
+									</button>
+									<div>
+									</div>
+									<button id="btn-left" class="control-knob">
+										◀
+									</button>
+									<div>
+									</div>
+									<button id="btn-right" class="control-knob">
+										▶
+									</button>
+									<div>
+									</div>
+									<button id="btn-down" class="control-knob">
+										▼
+									</button>
+									<div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Center Action Buttons -->
+							<div class="action-buttons-container">
+									<button id="btn-pen" class="action-button">
+										Pen Down
+									</button>
+									<button id="btn-shake" class="action-button">
+										Shake
+									</button>
+								</div>
+							
+							<!-- Right Knob - Step Control -->
+							<div class="knob-container step-control-container">
+								<label for="step-slider">
+									Step: 
+										<span id="step-value">
+											5
+										</span>
+									px
+								</label>
+								<input type="range" id="step-slider" min="5" max="80" step="5" value="5">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Etch-A-Sketch HTML End -->
+			</div>
+			
+			
+			<div id="snakepage" class="tab-pane">
+				<div class="w-full max-w-lg mx-auto text-center mb-4">
+					<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+						SNAKE
+					</h2>
+					<div class="mt-2 text-lg">
+						<span>
+							SCORE:
+						</span>
+						<span id="score">
+							0
+						</span>
+					</div>
+					<details>
+						<summary>
+							Settings
+						</summary>
+						<div class="snake-settings-container">
+							<label for ="snake-size-slider">
+								Grid Size:
+									<span id="snake-grid-size">
+										40 x 40
+									</span>
+									</br>
+							</label>	
+							<input type="range" id="snake-size-slider" min="10" max="100" value="40" step="10">
+							</br>
+							<label for="snake-speed-slider">
+								Speed Level: 
+									<span id="snake-speed-value">
+										1
+									</span>
+								</br>
+							</label>
+							<input type="range" id="snake-speed-slider" min="1" max="3" value="1">
+							</br>
+							<label for="snake-walls-setting">
+								Walls:
+							  <span class="slider">
+							  </span>
+							</label>
+							  <input id="snake-walls-setting" type="checkbox" value="1" checked>
+						</div>
+					</details>
+				</div>
+
+				<div style="width:100%;" class="relative w-full aspect-square bg-gray-800 rounded-lg shadow-2xl border-4 border-green-500">
+					<canvas id="snakeCanvas" class="absolute top-0 left-0 w-full h-full">
+					</canvas>
+					<!-- Game Over Modal -->
+					<div id="gameOverModal" class="flex-col hidden">
+						<h2 class="text-4xl text-red-500 font-bold">
+							GAME OVER
+						</h2>
+						<p class="text-xl mt-2">
+							Final Score: 
+								<span id="finalScore">
+									0
+								</span>
+						</p>
+						<button id="restartButton">
+							RESTART
+						</button>
+					</div>
+					<!-- Start Game Modal -->
+					<div id="startModal" class="flex flex-col">
+						 <h2>
+							WELCOME!
+						</h2>
+						 <p>
+							Use ARROW KEYS or on-screen buttons to move.
+						</p>
+						 <button id="startButton">
+							 START GAME
+						 </button>
+					 </div>
+					 <div id="snakepauseModal" class="flex-col hidden">
+						 <h2>
+							PAUSED
+						</h2>
+						 <p class="text-xl mt-2">
+							Press ESC to resume
+						</p>
+					 </div>
+				</div>
+
+				<!-- On-screen controls for mobile -->
+				<div class="grid grid-cols-3 gap-3 w-64 md:hidden">
+					<div>
+					</div>
+					<button id="upBtn" class="touch-button bg-gray-700 p-4 rounded-lg shadow-lg text-2xl">
+						▲
+					</button>
+					<div>
+					</div>
+					<button id="leftBtn" class="touch-button bg-gray-700 p-4 rounded-lg shadow-lg text-2xl">
+						◀
+					</button>
+					<button id="downBtn" class="touch-button bg-gray-700 p-4 rounded-lg shadow-lg text-2xl">
+						▼
+					</button>
+					<button id="rightBtn" class="touch-button bg-gray-700 p-4 rounded-lg shadow-lg text-2xl">
+						▶
+					</button>
+				</div>
+				
+				<div id="snakehiscores">
+					<h2 class="center text-3xl md:text-4xl font-bold uppercase tracking-widest">
+						High Scores
+					</h2>
+					<div id="snakehiscoredisplay">
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			<div id="tetrispage" class="tab-pane">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Tetris
+				</h2>
+			
+				<div id="tetris-container">
+					<!-- Hold Piece Panel -->
+					<div id="left-tetris-panel" class="side-tetris-panel">
+						<div id="tetris-hold-box" class="tetris-info-box">
+							<h2>
+								HOLD
+							</h2>
+							<canvas id="tetris-hold-canvas" width="120" height="120">
+							</canvas>
+						</div>
+					</div>
+
+					<!-- Game Board -->
+					<div id="tetris-board-container">
+						<canvas id="tetris-board">
+						</canvas>
+					</div>
+
+					<!-- Info and Next Piece Panel -->
+					<div id="right-tetris-panel" class="side-tetris-panel">
+						<div id="tetris-score-box" class="tetris-info-box">
+							<h2>
+								SCORE
+							</h2>
+							<p id="tetris-score-display">
+								0
+							</p>
+						</div>
+						<div id="tetris-lines-box" class="tetris-info-box">
+							<h2>
+								LINES
+							</h2>
+							<p id="tetris-lines-display">
+								0
+							</p>
+						</div>
+						<div id="tetris-level-box" class="tetris-info-box">
+							<h2>
+								LEVEL
+							</h2>
+							<p id="tetris-level-display">
+								0
+							</p>
+						</div>
+						<div id="tetris-next-box" class="tetris-info-box">
+							<h2>
+								NEXT
+							</h2>
+							<canvas id="tetris-next-canvas" width="120" height="360">
+							</canvas>
+						</div>
+					</div>
+					<!-- Game Over Modal -->
+					<div id="tetris-modal-overlay">
+						<div id="tetris-modal-content">
+							<h1 id="tetris-modal-title">
+								Retro Tetris
+							</h1>
+							<p id="tetris-modal-text">
+								Use Arrow Keys to move & rotate.
+								<br>
+								Space to hard drop. 'C' to hold.
+								<br>
+								Clear lines to score!
+							</p>
+							<button id="tetris-modal-start-button">
+								Start Game
+							</button>
+						</div>
+					</div>
+					 <div id="tetrispauseModal" class="flex-col hidden">
+						 <h2>
+							PAUSED
+						</h2>
+						 <p class="text-xl mt-2">
+							Press ESC to resume
+						</p>
+					 </div>
+				</div>
+				
+				
+				<div id="tetrishiscores">
+					<h2 class="center text-3xl md:text-4xl font-bold uppercase tracking-widest">
+						High Scores
+					</h2>
+					<div id="tetrishiscoredisplay">
+					</div>
+				</div>
+				
+
+
+			</div>
+			
+			
+			<div id="smolgames" class="tab-pane">
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Hangman
+				</h2>
+				<div class="hangman-modal">
+					<div class="content">
+						<img src="#" alt="gif">
+						<h4>
+							Game Over!
+						</h4>
+						<p>
+							The correct word was: 
+								<b>
+									rainbow
+								</b>
+						</p>
+						<button class="play-again">
+							Play Again
+						</button>
+					</div>
+				</div>
+				<div class="hangmancontainer">
+					<div class="hangman-box">
+						<img src="#" draggable="false" alt="hangman-img">
+						<h1>
+							Hangman Game
+						</h1>
+					</div>
+					<div class="hangman-box">
+						<ul class="hangman-word-display"></ul>
+						<h4 class="hangman-hint-text">
+							Hint: 
+							<b>
+							</b>
+						</h4>
+						<h4 class="hangman-guesses-text">
+							Incorrect guesses: 
+							<b>
+							</b>
+						</h4>
+						<div class="hangman-keyboard">
+						</div>
+					</div>
+				</div>
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Quiz
+				</h2>
+				<div class="quiz-container">
+				  <div class="quiz-start_btn">
+					<button>
+						Start Quiz
+					</button>
+				</div>
+				  <div class="quiz-info_box">
+					<div class="quiz-info-title">
+						<span>
+							Some Rules of this Quiz
+						</span>
+					</div>
+					<div class="quiz-info-list">
+					  <div class="quiz-info">
+						1. You will have only 
+							<span>
+								15 seconds
+							</span> 
+						per each question.
+					</div>
+					  <div class="quiz-info">
+						2. Once you select your answer, it can't be undone.
+					</div>
+					  <div class="quiz-info">
+						3. You can't select any option once time goes off.
+					</div>
+					  <div class="quiz-info">
+						4. You can't exit from the Quiz while you're playing.
+					</div>
+					  <div class="quiz-info">
+						5. You'll get points on the basis of your correct answers.
+					</div>
+					</div>
+					<div class="quiz-buttons">
+					  <button class="quiz-quit">
+						Exit Quiz
+					</button>
+					  <button class="quiz-restart">
+						Continue
+					</button>
+					</div>
+				  </div>
+
+				  <div class="quiz-quiz_box">
+					<header>
+					  <div class="quiz-title">
+						Quiz Application
+					</div>
+					  <div class="quiz-timer">
+						<div class="quiz-time_left_txt">
+							Time Left
+						</div>
+						<div class="quiz-timer_sec">
+							15
+						</div>
+					  </div>
+					  <div class="quiz-time_line">
+					  </div>
+					</header>
+					<section>
+					  <div class="quiz-que_text">
+					</div>
+					  <div class="quiz-option_list">
+					</div>
+					</section>
+
+					<div class="quiz-footer">
+					  <div class="quiz-total_que">
+						</div>
+					  <button class="quiz-next_btn">
+						Next
+					</button>
+					</div>
+				  </div>
+
+				  <div class="quiz-result_box">
+					<div class="quiz-icon">
+					  <i class="quiz-fas quiz-fa-crown">
+					  </i>
+					</div>
+					<div class="quiz-complete_text">
+						You've completed the Quiz!
+					</div>
+					<div class="quiz-score_text">
+					 </div>
+					<div class="quiz-buttons">
+					  <button class="quiz-restart">
+						Replay Quiz
+					</button>
+					  <button class="quiz-quit">
+						Quit Quiz
+					</button>
+					</div>
+				  </div>
+				</div>
+				
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Tic-Tac-Toe
+				</h2>
+				<div class="tic-container">
+				  <!-- select box -->
+				  <div class="tic-select-box">
+					<div class="tic-content">
+					  <div class="tic-title">
+						Select which you want to be?
+					</div>
+					  <div class="tic-options">
+						<button class="tic-playerX">
+							Player (X)
+						</button>
+						<button class="tic-playerO">
+							Player (O)
+						</button>
+					  </div>
+					</div>
+				  </div> 
+
+				  <!-- playboard section -->
+				  <div class="tic-play-board">
+					<div class="tic-details">
+					  <div class="tic-players">
+						<span class="tic-Xturn">
+							X's Turn
+						</span>
+						<span class="tic-Oturn">
+							O's Turn
+						</span>
+						<div class="tic-slider">
+						</div>
+					  </div>
+					</div>
+					<div class="tic-play-area">
+					  <section>
+						<span class="tic-box1">
+						</span>
+						<span class="tic-box2">
+						</span>
+						<span class="tic-box3">
+						</span>
+					  </section>
+					  <section>
+						<span class="tic-box4">
+						</span>
+						<span class="tic-box5">
+						</span>
+						<span class="tic-box6">
+						</span>
+					  </section>
+					  <section>
+						<span class="tic-box7">
+						</span>
+						<span class="tic-box8">
+						</span>
+						<span class="tic-box9">
+						</span>
+					  </section>
+					</div>
+				  </div>
+
+				  <!-- result box -->
+				  <div class="tic-result-box">
+					<div class="tic-won-text"></div>
+					<div class="tic-btn">
+						<button>
+							Replay
+						</button>
+					</div>
+				  </div>
+				</div>
+				
+				<h2 class="text-3xl md:text-4xl font-bold uppercase tracking-widest">
+					Rock Paper Scissors
+				</h2>
+				<div class="RPS-container">
+					<div class="RPS-result_field">
+						<div class="RPS-result_images">
+							<span class="RPS-user_result">
+								<img src="images/rock.png" alt="User's choice image" />
+							</span>
+							<span class="RPS-bot_result">
+								<img src="images/rock.png" alt="BOT's choice image" />
+							</span>
+						</div>
+						<div class="RPS-result">
+							Let's Play!
+						</div>
+					</div>
+
+					<div class="RPS-option_images">
+						<span class="RPS-option_image">
+							<img src="images/rock.png" alt="Rock image" />
+							<p>
+								Rock
+							</p>
+						</span>
+						<span class="RPS-option_image">
+							<img src="images/paper.png" alt="Paper image" />
+							<p>
+								Paper
+							</p>
+						</span>
+						<span class="RPS-option_image">
+							<img src="images/scissors.png" alt="Scissors image" />
+							<p>
+								Scissors
+							</p>
+						</span>
+					</div>
+				</div>
+				
+				
+			</div>	
+			
+			
+		</div>
+	</div>
+
+	<div id="add-link-modal" class="modal-overlay">
+		<div class="modal-content">
+			<h2>
+				Add New Link
+			</h2>
+			<form id="add-link-form">
+				<input type="hidden" id="modal-grid-target">
+				<div class="form-group">
+					<label for="link-name">
+						Name
+					</label>
+					<input type="text" id="link-name" required>
+				</div>
+				<div class="form-group">
+					<label for="link-url">
+						Link URL
+					</label>
+					<input type="url" id="link-url" required>
+				</div>
+				<div class="form-group">
+					<label for="link-icon">
+						Icon Image URL
+					</label>
+					<input type="url" id="link-icon" required>
+				</div>
+				<div class="form-group checkbox-group">
+					<input type="checkbox" id="link-invert">
+					<label for="link-invert">
+						Invert image color in dark mode?
+					</label>
+				</div>
+				<div class="modal-buttons">
+					<button type="button" id="modal-cancel-btn">
+						Cancel
+					</button>
+					<button type="submit" id="modal-save-btn">
+						Save
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="export-modal" class="modal-overlay">
+		<div class="modal-content">
+			<h2>
+				Export Configuration
+			</h2>
+			<p>
+				Copy this code and paste it into the correct section of initialvalues.js to set it as the new default.
+			</p>
+			<textarea id="export-textarea" readonly>
+			</textarea>
+			<div class="modal-buttons">
+				<button type="button" id="modal-close-btn">
+					Close
+				</button>
+				<button type="button" id="modal-copy-btn">
+					Copy to Clipboard
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="scroll-spacer">
+	</div>
+
+	<script src="scripts\linkgridsinitialvalues.js">
+	</script>
+
+	<script src="scripts\quizquestions.js">
+	</script>
+	
+    <script src="scripts\hangmanword-list.js">
+	</script>
+	
+    <script src="scripts\settlementgendata.js">
+	</script>
+
+	<script src="scripts\script.js">
+	</script>
+	
+	</body>
+</html>
